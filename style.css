@@ -12,6 +12,7 @@ body {
     background-color: #f4d0d0;
     font-family: 'Barlow Condensed', sans-serif;
     color: black;
+    font-weight: 300;
 }
 
 p {
@@ -64,13 +65,14 @@ p {
 
 .links {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 2vw;
 }
 
 .links__text {
-    font-size: max(1.1rem, 2.5vw);
+    font-size: max(0.8rem, 2.5vw);
 }
 
 
@@ -90,7 +92,9 @@ p {
 
 }
 
-a {
+.link {
     text-decoration: none;
-    color: black;
+    color: #723333;
+    font-weight: 400;
+
 }
