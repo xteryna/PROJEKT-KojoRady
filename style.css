@@ -26,7 +26,7 @@ p {
 }
 
 .title {
-    font-size: max(1.5rem, 5vw);
+    font-size: max(2rem, 6vw);
     font-weight: 300;
     margin-block: 1.5rem;
 }
@@ -50,14 +50,14 @@ p {
 }
 
 .hero-logo__code {
-    width: max(100px,13vw);
-    height: max(100px,13vw);
+    width: max(120px,15vw);
+    height: max(120px,15vw);
 }
 
 .hero-logo__logo {
     width: max(200px,20vw);
     height: max(200px,20vw);
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 1/span2;
 }
 
