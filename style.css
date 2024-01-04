@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
   }
+
   
   *, ::before, ::after {
     box-sizing: inherit;
@@ -22,7 +23,7 @@ p {
     padding-inline: 10vw;
     display: grid;
     align-content: center;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .title {
