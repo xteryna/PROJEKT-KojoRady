@@ -21,7 +21,7 @@ p {
 
 
 .wrap {
-    padding-inline: 10vw;
+    
     display: grid;
     align-content: center;
     min-height: 100dvh;
@@ -29,7 +29,7 @@ p {
 
 .title {
     font-size: max(2rem, 6vw);
-    font-weight: 300;
+    font-weight: 200;
     margin-block: 1.5rem;
 }
 
@@ -72,7 +72,7 @@ p {
 }
 
 .links__text {
-    font-size: max(0.8rem, 2.5vw);
+    font-size: max(1rem, 2.5vw);
 }
 
 
@@ -90,6 +90,10 @@ p {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .wrap {
+        padding-inline: 10vw;
+    }
+
 }
 
 .link {
@@ -97,4 +101,14 @@ p {
     color: #723333;
     font-weight: 400;
 
+}
+
+.link:hover {
+    font-weight: 500;
+}
+
+.hero-logo__code img:hover {
+    /* width: 105%;
+    height: 105%; */
+    border: 1px solid #e4b3b3;
 }
