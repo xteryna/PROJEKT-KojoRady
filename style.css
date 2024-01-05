@@ -68,7 +68,7 @@ p {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 1.5vw;
 }
 
 .links__text {
