@@ -127,6 +127,8 @@ p {
 .link-inline:hover {
     /* text-decoration: underline; */
     color: #723333;
+    font-size: 0.9em;
+    padding-inline: 0.221em;
 }
 
 .hero-logo__code img:hover {
