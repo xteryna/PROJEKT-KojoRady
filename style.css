@@ -80,7 +80,7 @@ p {
 }
 
 .links__text {
-    font-size: max(1rem, 2.5vw);
+    font-size: max(0.9rem, 2.5vw);
 }
 
 
@@ -104,10 +104,10 @@ p {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 409px) {
     .links {
         grid-template-columns: 1fr;
-        margin-top: auto;
+        margin-top: 2vh;
     }
     .wrap {
         padding-block: 2px;
