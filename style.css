@@ -108,6 +108,7 @@ p {
     .links {
         grid-template-columns: 1fr;
         margin-top: 2vh;
+        gap: 0.5vh
     }
     .wrap {
         padding-block: 2px;
