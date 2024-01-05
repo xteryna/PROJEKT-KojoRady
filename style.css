@@ -96,15 +96,37 @@ p {
 
 }
 
-.link {
-    text-decoration: none;
-    color: #723333;
-    font-weight: 400;
-
+@media screen and (max-width: 450px) {
+    .links {
+        grid-template-columns: 1fr;
+    }
 }
 
-.link:hover {
-    font-weight: 500;
+.link {
+    text-decoration: none;
+    /* color: #723333; */
+    color: black;
+    /* font-weight: 400; */
+    display: inline-block;
+    
+
+} 
+
+.link-block {
+    border: 1px solid #f4d0d0;
+    padding: 0.3em;
+    border-radius: 15px;
+}
+
+.link-block:hover {
+    /* font-weight: 500; */
+    border: 1px solid #e4b3b3;
+    font-size: 0.98em;
+}
+
+.link-inline:hover {
+    /* text-decoration: underline; */
+    color: #723333;
 }
 
 .hero-logo__code img:hover {
