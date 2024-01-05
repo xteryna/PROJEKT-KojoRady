@@ -17,6 +17,8 @@ body {
 
 p {
     font-size: max(1rem, 2vw);
+    margin-top: 4vh;
+    margin-bottom: 0;
 }
 
 
@@ -25,12 +27,16 @@ p {
     display: grid;
     align-content: center;
     min-height: 100dvh;
+    padding-block: 4vh;
 }
 
 .title {
     font-size: max(2rem, 6vw);
     font-weight: 200;
-    margin-block: 1.5rem;
+    margin: 0;
+    
+   
+   
 }
 
 
@@ -43,6 +49,7 @@ p {
     align-items: center;
     justify-items: center;
     gap: 2vw;
+    margin-top: 4vh;
 }
 
 .hero-logo img {
@@ -69,6 +76,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 1.5vw;
+    margin-top: 4vh;
 }
 
 .links__text {
@@ -99,6 +107,10 @@ p {
 @media screen and (max-width: 450px) {
     .links {
         grid-template-columns: 1fr;
+        margin-top: auto;
+    }
+    .wrap {
+        padding-block: 2px;
     }
 }
 
