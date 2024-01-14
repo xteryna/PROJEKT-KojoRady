@@ -72,7 +72,7 @@ p {
 
 .links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     gap: 1.5vw;
@@ -94,9 +94,6 @@ p {
         grid-column: auto;
     }
 
-    .links {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
     .wrap {
         padding-inline: 10vw;
@@ -104,16 +101,6 @@ p {
 
 }
 
-@media screen and (max-width: 409px) {
-    .links {
-        grid-template-columns: 1fr;
-        margin-top: 2vh;
-        gap: 0.5vh
-    }
-    .wrap {
-        padding-block: 2px;
-    }
-}
 
 .link {
     text-decoration: none;
