@@ -149,9 +149,14 @@ a {
 }
 
 .logo {
+  width: clamp(100px, 20vw, 200px);
+  height: clamp(100px, 20vw, 200px);
+  margin: auto;
+}
+.logo--large {
   width: max(300px, 20vw);
   height: max(300px, 20vw);
-  margin: 5vh auto;
+  margin: 3vh auto;
 }
 .logo__image {
   border-radius: 50%;

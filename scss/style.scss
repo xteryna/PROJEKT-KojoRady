@@ -14,6 +14,7 @@ $f-growing-l: max(1.5rem, 2vw);
 $f-growing-xl: max(2rem, 5vw);
 
 $pic-growing-l: max(300px,20vw);
+$pic-growing-s: clamp(100px,20vw, 200px);
 
 $m-tablet: 610px;
 $m-PC: 1000px;
@@ -183,9 +184,16 @@ a {
 }
 
 .logo {
-  width: $pic-growing-l;
-  height: $pic-growing-l;
-  margin: 5vh auto;
+  width: $pic-growing-s;
+  height: $pic-growing-s;
+  margin: auto;
+
+  &--large {
+    width: $pic-growing-l;
+    height: $pic-growing-l;
+    margin: 3vh auto;
+
+  }
 
   &__image {
   border-radius: 50%;
