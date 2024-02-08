@@ -1,70 +1,13 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta property="og:image" content="images/logo.png">
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ecadad">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ecadad">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#f4d0d0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500&display=swap" rel="stylesheet">
-
-	
-
-    <!-- Primary Meta Tags -->
-	    <title>KojoRady: světový týden kojení</title>
-    <meta name="title" content="KojoRady: světový týden kojení" />
-    <meta name="description" content="V neděli 4.8.2024 pořádáme na hradě Hněvín oslavu světového dne kojení s přednáškami které s kojením, péčí o dítě a matku, rodičovstvím a mateřstvím souvisí.">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="kojorady.cz" />
-    <meta property="og:title" content="KojoRady: světový týden kojení" />
-    <meta property="og:description" content="V neděli 4.8.2024 pořádáme na hradě Hněvín oslavu světového dne kojení." />
-    <meta property="og:image" content="https://kojorady.cz/images/logo-media.jpeg" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="kojorady.cz" />
-    <meta property="twitter:title" content="KojoRady: světový týden kojení" />
-    <meta property="twitter:description" content="V neděli 4.8.2024 pořádáme na hradě Hněvín oslavu světového dne kojení s přednáškami které s kojením, péčí o dítě a matku, rodičovstvím a mateřstvím souvisí." />
-    <meta property="twitter:image" content="https://kojorady.cz/images/logo-media.jpeg" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
+---
+layout: layouts/sablona-hlavni.njk
+title: KojoRady - světový týden kojení
+description: V neděli 4.8.2024 pořádáme na hradě Hněvín oslavu světového dne kojení s přednáškami které s kojením, péčí o dítě a matku, rodičovstvím a mateřstvím souvisí.
+og-description: V neděli 4.8.2024 pořádáme na hradě Hněvín oslavu světového dne kojení.
+---
 
 <body>
 
-
-    <div class="menu__wrap pink">
-        <nav class="menu">
-            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="menu__toggler">≡</label>
-
-            <div class="menu__box pink">
-                <a href="index.html" class="menu__item">Kojorady</a>
-                <a href="o-projektu.html" class="menu__item">O projektu</a>
-                <a href="predporodni-priprava.html" class="menu__item">Předporodní příprava</a>
-                <a href="podpurne-skupiny.html" class="menu__item">Podpůrné skupiny</a>
-                <!-- <a href="svetovy-tyden-kojeni.html" class="menu__item">Světový týden kojení</a> -->
-                <a href="kontakty.html" class="menu__item">Kontakty</a>
-            </div>
-        </nav>
-
-        <div class="menu__space"></div>
-    </div>
-
+{% include 'partials/menu.njk' %}
 
     <div class="content">
         <h1 class="title">Světový týden kojení</h1>
@@ -96,7 +39,6 @@
     <p>copyright: Tereza Beránková 2024</p>
     </footer>
 
-
+    {% include 'partials/footer.njk' %}
 
 </body>
-</html>
