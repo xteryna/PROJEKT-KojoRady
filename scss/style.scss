@@ -1,0 +1,336 @@
+$c-primary: #f4d0d0;
+$c-secondary: black;
+$c-lighter: #f6dbdb;
+$c-hover-background: #f7e9e9;
+$c-dark: #e89d9d;
+
+
+$shadow: 2px 2px 5px #e4b3b3;
+$border: 1px solid #e4b3b3;
+
+$f-growing-s: max(1rem, 1.7vw);
+$f-growing-m: max(1rem, 2vw);
+$f-growing-l: max(1.5rem, 2vw);
+$f-growing-xl: max(2rem, 5vw);
+
+$pic-growing-l: max(300px,20vw);
+
+$m-tablet: 610px;
+$m-PC: 1000px;
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: black;
+    font-weight: 300;
+    margin: 0px;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+  font-size: $f-growing-xl;
+  font-weight: 200;
+  margin-top: 3vw;
+  margin-bottom: 1vW;
+}
+
+h2 {
+  font-size: $f-growing-m;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+p {
+  font-size: $f-growing-s;
+  margin-block: 1.5vh;
+}
+
+a {
+  font-size: $f-growing-s;
+}
+.link-inline {
+  color: $c-dark;
+
+   &:hover {
+    background-color: $c-hover-background;
+    border-radius: 5px;
+   }
+}
+
+.pink {
+    background-color: $c-primary; 
+}
+
+.italic {
+  font-style: italic;
+}
+
+.highlight {
+  color: $c-dark;
+  text-decoration: none;
+}
+
+.menu {
+  margin-bottom: -2px;
+  position: fixed;
+  top:0;
+  z-index: 1;
+  width: 100%;
+
+  &__space {
+    height: 50px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: -9999px;
+  }
+
+  &__checkbox:checked ~ &__box {
+    display: block;
+  }
+  
+  &__toggler {
+    cursor: pointer;
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+  }
+
+  &__box {
+    display: none;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  &__item {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: $c-secondary;
+    font-size: $f-growing-s;
+
+    &:hover {
+      text-decoration: underline 1.2px;
+    }
+  }
+}
+
+@media screen and (min-width:$m-tablet) {
+  .menu {
+    &__toggler {
+        display: none;
+    }
+
+    &__box {
+        display: flex !important;
+        width: 100%;
+        justify-content: space-around;
+        min-height: 50px;
+        align-items: end;
+        align-items: center;
+    }
+  }
+}
+
+.content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  background-image: url(/images/okraj-horni.svg), url(/images/okraj-dolni.svg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom left;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: center;
+  padding: 3vh 1.5vw 10vh;
+}
+
+.footer {
+  height: 10dvh;
+  background-color: $c-primary;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  background-image: url(/images/prsa-vodorovne.svg);
+  background-repeat: repeat-x;
+  background-size: 400px;
+  flex: none;
+  margin-top: -2px;
+
+  & p{
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
+.logo {
+  width: $pic-growing-l;
+  height: $pic-growing-l;
+  margin: 5vh auto;
+
+  &__image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  }
+}
+
+/* kontakty */
+.contact {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2vw;
+    margin-top: 4vh;
+    align-items: center;
+  }
+
+  &__social-media {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+
+.image-link {
+  display: block;
+  width: clamp(100px, 10vw, 250px);
+  margin: auto;
+
+  &:hover {
+    background-color: $c-hover-background;
+    border-radius: 5px;
+    border: $border;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.card {
+  max-width: 400px;
+  text-decoration: none;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.7em;
+  padding: 0.7em;
+  border-radius: 15px;
+  border: 1px solid $c-primary;
+  color: $c-secondary;
+  justify-self: center;
+
+  &:hover {
+    border-radius: 15px;
+    box-shadow: $shadow;
+    background-color: $c-lighter;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__pic {
+    flex: 0 1 40%;
+
+    & img {
+      width: clamp(90px, 100%, 250px);
+      border-radius: 50%;
+      border: 1px solid #e4b3b3;
+    }
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
+
+.icon {
+  width: max(40px, 5vw);
+  height: max(40px, 5vw);
+  justify-self: center;
+  flex-grow: 0;
+  display: block;
+  color: $c-dark;
+  
+  &:hover {
+    background-color: $c-hover-background;
+    border-radius: 0.5vw;
+  }
+}
+
+
+@media screen and (min-width: $m-tablet) {
+  .wrap {
+      padding-inline: 5vw;
+  }
+
+  .contact__grid {
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .contact__social-media, .contact__location, .image-link {
+      grid-column: span 2;
+  }
+
+  .card {
+      flex-direction: column;
+      max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact {
+    &__grid {
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-rows: auto auto auto;
+      grid-auto-flow: dense;
+    }
+
+    &__social-media {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &__location {
+      grid-column: 2;
+      grid-row: 1; 
+    }
+  }
+
+  .image-link {
+      grid-column: 2;
+      grid-row: 3;
+  }
+
+  .card {
+      grid-row: span 3;
+      align-self: auto;
+  }
+}
