@@ -40,7 +40,7 @@ a {
 }
 
 .link-inline {
-  color: #e89d9d;
+  color: #d45e5e;
 }
 .link-inline:hover {
   background-color: #f7e9e9;
@@ -56,7 +56,7 @@ a {
 }
 
 .highlight {
-  color: #e89d9d;
+  color: #d45e5e;
   text-decoration: none;
 }
 
@@ -86,7 +86,8 @@ a {
 .menu__box {
   display: none;
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
+  padding: 10px;
 }
 .menu__item {
   display: block;
@@ -97,10 +98,15 @@ a {
   text-align: center;
   color: black;
   font-size: max(1rem, 1.7vw);
+  width: max(50%, 150px);
+  margin: auto;
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
 .menu__item:hover {
-  -webkit-text-decoration: underline 1.2px;
-          text-decoration: underline 1.2px;
+  background-color: #f6dbdb;
+  border-color: #e4b3b3;
+  box-shadow: 2px 2px 5px #e4b3b3;
 }
 
 @media screen and (min-width: 610px) {
@@ -234,7 +240,7 @@ a {
   justify-self: center;
   flex-grow: 0;
   display: block;
-  color: #e89d9d;
+  color: #d45e5e;
 }
 .icon:hover {
   background-color: #f7e9e9;

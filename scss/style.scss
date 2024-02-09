@@ -2,7 +2,8 @@ $c-primary: #f4d0d0;
 $c-secondary: black;
 $c-lighter: #f6dbdb;
 $c-hover-background: #f7e9e9;
-$c-dark: #e89d9d;
+$c-darker: #e4b3b3;
+$c-dark: #d45e5e;
 
 
 $shadow: 2px 2px 5px #e4b3b3;
@@ -114,7 +115,8 @@ a {
   &__box {
     display: none;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
+    padding: 10px;
   }
 
   &__item {
@@ -126,9 +128,15 @@ a {
     text-align: center;
     color: $c-secondary;
     font-size: $f-growing-s;
+    width:max(50%, 150px);
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
 
     &:hover {
-      text-decoration: underline 1.2px;
+      background-color: $c-lighter;
+      border-color: $c-darker;
+      box-shadow: $shadow;
     }
   }
 }
