@@ -3,12 +3,13 @@ $c-secondary: black;
 $c-lighter: #f6dbdb;
 $c-hover-background: #f7e9e9;
 $c-darker: #e4b3b3;
-$c-dark: #d45e5e;
+$c-dark: #f89090;
 
 
 $shadow: 2px 2px 5px #e4b3b3;
 $border: 1px solid #e4b3b3;
 
+$f-growing-xs: max(0.8rem, 1.4vw);
 $f-growing-s: max(1rem, 1.7vw);
 $f-growing-m: max(1rem, 2vw);
 $f-growing-l: max(1.5rem, 2vw);
@@ -91,6 +92,19 @@ a {
   text-decoration: none;
 }
 
+.grid {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column;
+
+  & p{
+    font-size: $f-growing-xs;
+  }
+}
+
 .menu {
   margin-bottom: -2px;
   position: fixed;
@@ -168,10 +182,14 @@ a {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: auto;
-  background-image: url(/images/okraj-horni.svg), url(/images/okraj-dolni.svg);
-  background-size: 100%, 100%;
-  background-repeat: no-repeat, no-repeat;
-  background-position: top left, bottom left;
+  // background-image: url(/images/okraj-horni.svg), url(/images/okraj-dolni.svg);
+  // background-size: 100%, 100%;
+  // background-repeat: no-repeat, no-repeat;
+  // background-position: top left, bottom left;
+  background-image: url(/images/okraj-dolni.svg);
+  background-size:  100%;
+  background-repeat:  no-repeat;
+  background-position: bottom left;
   display: flex;
   flex-direction: column;
   justify-content:center;
