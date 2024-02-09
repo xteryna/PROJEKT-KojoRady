@@ -55,6 +55,11 @@ a {
   font-style: italic;
 }
 
+.cite {
+  font-family: "Caveat", cursive;
+  font-size: 1.2em;
+}
+
 .highlight {
   color: #d45e5e;
   text-decoration: none;
