@@ -1,6 +1,6 @@
 // Replace with your Instagram Access Token
 const accessToken = 'IGQWRQcm0xQmVEUEFodmdybkJnT0huMzNleEQ2ZAEFYckxEQklMYVZApRk1TUHM1c21uMXM1ZAkQ2SXZAwSEZApY29SSnpfNkxHcHk5TEgyWkxnQzNmZAWhYWEtJcGZASUHo2ZAWdoS1AtSWVTN2NWYV9LOFBBSm9SN2NmZAzAZD';
-const limit = 6
+const limit = 8;
 // Function to fetch and display Instagram feed
 function getInstagramFeed() {
     fetch(`https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,permalink,timestamp&access_token=${accessToken}&limit=${limit}`)
