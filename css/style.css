@@ -265,7 +265,35 @@ a {
   border-radius: 0.5vw;
 }
 
+.grid {
+  height: 10dvh;
+}
+
+.image-link {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.card {
+  grid-row: span 3;
+  align-self: auto;
+}
+
+.instagram-feed {
+  margin-block: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+.instagram-feed img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 610px) {
+  .instagram-feed {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .wrap {
     padding-inline: 5vw;
   }
@@ -283,6 +311,9 @@ a {
   }
 }
 @media screen and (min-width: 900px) {
+  .instagram-feed {
+    grid-template-columns: repeat(6, 1fr);
+  }
   .contact__grid {
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto auto auto;
@@ -295,16 +326,5 @@ a {
   .contact__location {
     grid-column: 2;
     grid-row: 1;
-  }
-  .grid {
-    height: 10dvh;
-  }
-  .image-link {
-    grid-column: 2;
-    grid-row: 3;
-  }
-  .card {
-    grid-row: span 3;
-    align-self: auto;
   }
 }/*# sourceMappingURL=style.css.map */
