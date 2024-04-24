@@ -57,12 +57,12 @@ h2 {
 }
 
 p {
-  font-size: $f-growing-s;
+  font-size: $f-growing-xs;
   margin-block: 1.5vh;
 }
 
 a {
-  font-size: $f-growing-s;
+  font-size: $f-growing-xs;
 }
 .link-inline {
   color: $c-dark;
@@ -151,7 +151,7 @@ a {
     text-decoration: none;
     text-align: center;
     color: $c-secondary;
-    font-size: $f-growing-s;
+    font-size: $f-growing-xs;
     width:max(50%, 150px);
     margin: auto;
     border: 1px solid transparent;

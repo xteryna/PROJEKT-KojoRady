@@ -31,12 +31,12 @@ h2 {
 }
 
 p {
-  font-size: max(1rem, 1.5vw);
+  font-size: max(0.8rem, 1.4vw);
   margin-block: 1.5vh;
 }
 
 a {
-  font-size: max(1rem, 1.5vw);
+  font-size: max(0.8rem, 1.4vw);
 }
 
 .link-inline {
@@ -118,7 +118,7 @@ a {
   text-decoration: none;
   text-align: center;
   color: black;
-  font-size: max(1rem, 1.5vw);
+  font-size: max(0.8rem, 1.4vw);
   width: max(50%, 150px);
   margin: auto;
   border: 1px solid transparent;
