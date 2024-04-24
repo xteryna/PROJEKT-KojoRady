@@ -31,12 +31,12 @@ h2 {
 }
 
 p {
-  font-size: max(1rem, 1.7vw);
+  font-size: max(1rem, 1.5vw);
   margin-block: 1.5vh;
 }
 
 a {
-  font-size: max(1rem, 1.7vw);
+  font-size: max(1rem, 1.5vw);
 }
 
 .link-inline {
@@ -118,7 +118,7 @@ a {
   text-decoration: none;
   text-align: center;
   color: black;
-  font-size: max(1rem, 1.7vw);
+  font-size: max(1rem, 1.5vw);
   width: max(50%, 150px);
   margin: auto;
   border: 1px solid transparent;
@@ -141,6 +141,7 @@ a {
     min-height: 50px;
     align-items: end;
     align-items: center;
+    padding: 0 10vw;
   }
 }
 .content {
@@ -156,6 +157,11 @@ a {
   justify-content: center;
   align-content: center;
   padding: 3vh 10vw 10vh;
+}
+@media screen and (min-width: 1000px) {
+  .content {
+    padding: 3vh 15vw 10vh;
+  }
 }
 
 .footer {

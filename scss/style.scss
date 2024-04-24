@@ -10,7 +10,7 @@ $shadow: 2px 2px 5px #e4b3b3;
 $border: 1px solid #e4b3b3;
 
 $f-growing-xs: max(0.8rem, 1.4vw);
-$f-growing-s: max(1rem, 1.7vw);
+$f-growing-s: max(1rem, 1.5vw);
 $f-growing-m: max(1rem, 2vw);
 $f-growing-l: max(1.5rem, 2vw);
 $f-growing-xl: max(2rem, 5vw);
@@ -178,6 +178,7 @@ a {
         min-height: 50px;
         align-items: end;
         align-items: center;
+        padding: 0 10vw;
     }
   }
 }
@@ -199,6 +200,10 @@ a {
   justify-content:center;
   align-content: center;
   padding: 3vh 10vw 10vh;
+  @media screen and (min-width: $m-PC) {
+    padding: 3vh 15vw 10vh;
+  }
+
 }
 
 .footer {
